@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background: #3cb371;
+        }
+    </style>
+    <title>Data Storage Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 text-center mt-3 mb-4 text-white">Data Storage Converter</h1>
+                <form>
+                    <div class="form-group">
+                        <input type="number" id="kbsInput" class="form-control form-control-lg" placeholder="Enter Kilobytes">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card bg-primary text-white mb-3">
+                        <div class="card-body">
+                            <h4>Megabytes:</h4>
+                            <div id="mbOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-secondary text-white mb-3">
+                        <div class="card-body">
+                            <h4>Gigabytes:</h4>
+                            <div id="gbOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-danger text-white mb-3">
+                        <div class="card-body">
+                            <h4>Terabytes:</h4>
+                            <div id="tbOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
